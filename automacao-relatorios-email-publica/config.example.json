@@ -1,0 +1,47 @@
+{
+  "master_file": "data/master.xlsx",
+  "contacts_file": "data/contacts.xlsx",
+  "stores_root": "data/stores",
+  "email_template": "templates/email.html",
+  "sender_on_behalf": "",
+  "email_subject": "Pending records for {store}",
+  "age_days_inclusive": [6, 7],
+  "contacts": {
+    "sheet_name": null,
+    "store_column": "Store",
+    "email_column": "Email",
+    "manager_column": "Manager"
+  },
+  "categories": [
+    {
+      "key": "TYPE_A",
+      "label": "Type A",
+      "sheet": "Type A",
+      "store_column": "Store",
+      "date_column": "Date",
+      "output_subfolder": "TYPE_A",
+      "output_filename": "{store}_{category}.xlsx",
+      "workbook_template": "examples/workbook_templates/TYPE_A.xlsx"
+    },
+    {
+      "key": "TYPE_B",
+      "label": "Type B",
+      "sheet": "Type B",
+      "store_column": "Store",
+      "date_column": "Date",
+      "output_subfolder": "TYPE_B",
+      "output_filename": "{store}_{category}.xlsx",
+      "workbook_template": "examples/workbook_templates/TYPE_B.xlsx"
+    },
+    {
+      "key": "TYPE_C",
+      "label": "Type C",
+      "sheet": "Type C",
+      "store_column": "Store",
+      "date_column": "Date",
+      "output_subfolder": "TYPE_C",
+      "output_filename": "{store}_{category}.xlsx",
+      "workbook_template": "examples/workbook_templates/TYPE_C.xlsx"
+    }
+  ]
+}

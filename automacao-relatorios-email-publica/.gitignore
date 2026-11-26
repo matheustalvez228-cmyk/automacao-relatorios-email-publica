@@ -1,0 +1,32 @@
+# Local configuration and credentials
+config.json
+.env*
+*.secret
+*.pem
+*.key
+
+# Personal or operational data
+data/**
+!data/README.md
+!data/.gitkeep
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+*.csv
+!examples/workbook_templates/*.xlsx
+*.oft
+*.msg
+*.eml
+
+# Runtime output
+*.log
+output/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.vscode/
+Thumbs.db
+desktop.ini
